@@ -1,0 +1,41 @@
+# Tests failures
+
+org.apache.hadoop.hive.llap.tezplugins.TestLlapTaskCommunicator.testFinishableStateUpdateFailure
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapPlan1
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapPlan2
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapRedPlan1
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapRedPlan2
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapRedPlan3
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapRedPlan4
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapRedPlan5
+org.apache.hadoop.hive.ql.exec.TestExecDriver.testMapRedPlan6
+--> JAR does not exist or is not a normal file: /dataclan/hive/ql/.m2/org/apache/hive/hive-exec/3.1.3-TDP-0.1.0/hive-exec-3.1.3-TDP-0.1.0.jar
+--> Ok with mvn test / KO with mvn surefire:test
+
+
+org.apache.hadoop.hive.ql.exec.vector.expressions.TestVectorCastStatement.testBinary
+org.apache.hadoop.hive.ql.exec.vector.expressions.TestVectorStringExpressions.testStringLikeMultiByte
+--> KO
+
+org.apache.hadoop.hive.ql.session.TestSessionState.testReloadAuxJars2[0]
+org.apache.hadoop.hive.ql.session.TestSessionState.testReloadAuxJars2[1]
+org.apache.hadoop.hive.ql.session.TestSessionState.testReloadExistingAuxJars2[0]
+org.apache.hadoop.hive.ql.session.TestSessionState.testReloadExistingAuxJars2[1]
+--> Ok with Java 1.8
+
+org.apache.hadoop.hive.ql.TestTxnCommandsForMmTable.testInsertOverwriteForPartitionedMmTable
+org.apache.hadoop.hive.ql.TestTxnCommandsForOrcMmTable.testInsertOverwriteForPartitionedMmTable
+--> KO
+
+org.apache.hive.beeline.TestBeelineArgParsing.testAddLocalJar[DummyDriver]
+org.apache.hive.beeline.TestBeelineArgParsing.testAddLocalJarWithoutAddDriverClazz[DummyDriver]
+org.apache.hive.beeline.TestBeelineArgParsing.testAddLocalJarWithoutAddDriverClazz[org.postgresql.Driver]
+--> Ok with Java 1.8
+
+org.apache.hive.hcatalog.pig.TestAvroHCatStorer.testWriteDecimal
+org.apache.hive.hcatalog.pig.TestAvroHCatStorer.testWriteDecimalX
+--> Ok with retry
+
+org.apache.hive.spark.client.rpc.TestRpc.testServerPort
+--> KO
+java.io.IOException: Incorrect RPC server port configuration for HiveServer2
