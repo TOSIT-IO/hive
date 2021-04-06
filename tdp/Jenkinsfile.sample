@@ -1,0 +1,24 @@
+podTemplate {
+    node('tdp-builder') {
+        stage('Git clone') {
+            checkout([$class: 'GitSCM', branches: [[name: 'branch-3.1-TDP']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'http://gitlab.adaltas.com/dataclan/hive.git']]])
+        }
+        stage('Build') {
+            container('tdp-builder'){
+                sh '''
+                mvn -Dmaven.repo.local=./.m2 clean package -T 4 -DforkCount=4 -B -Dtar -DskipTests -Drat.numUnapprovedLicenses=1000
+                '''
+            }
+        }
+        stage('Run unit tests') {
+            container('tdp-builder') {
+                sh '''
+                mvn -Dmaven.repo.local=./.m2 test -fn -B -Drat.numUnapprovedLicenses=1000 -Dsurefire.rerunFailingTestsCount=3
+                '''
+            }
+        }
+        stage('Publish tests results') {
+            junit '**/surefire-reports/*.xml'
+        }
+    }
+}
