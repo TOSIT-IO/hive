@@ -39,3 +39,5 @@ java.lang.IncompatibleClassChangeError: com.sun.jersey.json.impl.provider.entity
 ```
 
 The issue was that the version of `jersey-json` embedded by Tez is too old compared to the one used in Ranger (see `tez/tdp/README.md` for details).
+
+Commit `6f8bc5d87c758cd08c8a9a968d1effa65e6c38a9` exludes `pentaho-aggdesigner-algorithm` since it cannot be found in the `https://repo.maven.apache.org/maven2` repository and is not needed.
