@@ -193,6 +193,7 @@
       <version>${hadoop.version}</version>
       <classifier>tests</classifier>
       <scope>test</scope>
+<<<<<<< HEAD
         <exclusions>
              <exclusion>
             <groupId>org.slf4j</groupId>
@@ -202,6 +203,25 @@
             <groupId>commmons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
+=======
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-reload4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>ch.qos.reload4j</groupId>
+          <artifactId>reload4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+>>>>>>> 390ebf2272 (HIVE-26579: Prepare for Hadoop and Zookeeper switching to Reload4j. (#3635). (Attila Doroszlai, reviewed by Ayush Saxena))
       </exclusions>
     </dependency>
     <dependency>
@@ -232,6 +252,7 @@
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-minicluster</artifactId>
       <scope>test</scope>
+<<<<<<< HEAD
         <exclusions>
              <exclusion>
             <groupId>org.slf4j</groupId>
@@ -241,6 +262,25 @@
             <groupId>commmons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
+=======
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-reload4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>ch.qos.reload4j</groupId>
+          <artifactId>reload4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+>>>>>>> 390ebf2272 (HIVE-26579: Prepare for Hadoop and Zookeeper switching to Reload4j. (#3635). (Attila Doroszlai, reviewed by Ayush Saxena))
       </exclusions>
     </dependency>
     <dependency>

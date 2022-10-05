@@ -218,6 +218,58 @@
                   </filters>
                   <artifactSet>
                     <excludes>
+                      <exclude>antlr:*</exclude>
+                      <exclude>aopalliance:*</exclude>
+                      <exclude>asm:*</exclude>
+                      <exclude>ch.qos.reload4j:*</exclude>
+                      <exclude>com.fasterxml.jackson.core:*</exclude>
+                      <exclude>com.google.code.gson:*</exclude>
+                      <exclude>com.google.inject:*</exclude>
+                      <exclude>com.google.inject.extensions:*</exclude>
+                      <exclude>com.jamesmurty.utils:*</exclude>
+                      <exclude>com.jcraft:*</exclude>
+                      <exclude>com.jolbox:*</exclude>
+                      <exclude>commons-beanutils:*</exclude>
+                      <exclude>commons-cli:*</exclude>
+                      <exclude>commons-dbcp:*</exclude>
+                      <exclude>commons-digester:*</exclude>
+                      <exclude>commons-el:*</exclude>
+                      <exclude>commons-httpclient:*</exclude>
+                      <exclude>commons-io:*</exclude>
+                      <exclude>commons-net:*</exclude>
+                      <exclude>commons-pool:*</exclude>
+                      <exclude>com.google.code.findbugs:*</exclude>
+                      <exclude>com.google.protobuf:*</exclude>
+                      <exclude>com.microsoft.sqlserver:mssql-jdbc</exclude>
+                      <exclude>com.sun.jersey:*</exclude>
+                      <exclude>com.sun.jersey.contribs:*</exclude>
+                      <exclude>com.sun.xml.bind:*</exclude>
+                      <exclude>com.tdunning:*</exclude>
+                      <exclude>com.thoughtworks.paranamer:*</exclude>
+                      <exclude>com.twitter:*</exclude>
+                      <exclude>com.zaxxer:*</exclude>
+                      <exclude>io.airlift:*</exclude>
+                      <exclude>io.dropwizard.metrics:*</exclude>
+                      <exclude>io.netty:*</exclude>
+                      <exclude>javax.activation:*</exclude>
+                      <exclude>javax.inject:*</exclude>
+                      <exclude>javax.jdo:*</exclude>
+                      <exclude>javax.jms:*</exclude>
+                      <exclude>javax.mail:*</exclude>
+                      <exclude>javax.servlet:*</exclude>
+                      <exclude>javax.servlet.jsp:*</exclude>
+                      <exclude>javax.transaction:*</exclude>
+                      <exclude>javax.xml.*:*</exclude>
+                      <exclude>jline:*</exclude>
+                      <exclude>joda-time:*</exclude>
+                      <exclude>junit:*</exclude>
+                      <exclude>log4j:*</exclude>
+                      <exclude>net.java.dev.jets3t:*</exclude>
+                      <exclude>net.sf.jpam:*</exclude>
+                      <exclude>net.sf.opencsv:*</exclude>
+                      <exclude>org.antlr:*</exclude>
+                      <exclude>org.apache.ant:*</exclude>
+                      <exclude>org.apache.avro:*</exclude>
                       <exclude>org.apache.commons:commons-compress</exclude>
                       <exclude>org.apache.hadoop:hadoop-hdfs</exclude>
                       <exclude>org.apache.hadoop:hadoop-client</exclude>
@@ -304,7 +356,10 @@
                       <exclude>org.datanucleus:*</exclude>
                       <exclude>org.fusesource.leveldbjni:*</exclude>
                       <exclude>org.htrace:*</exclude>
-                      <exclude>org.mortbay.jetty:*</exclude>
+                      <exclude>org.ow2.asm:*</exclude>
+                      <exclude>org.slf4j:slf4j-log4j12</exclude>
+                      <exclude>org.slf4j:slf4j-reload4j</exclude>
+                      <exclude>org.tukaani:*</exclude>
                       <exclude>org.xerial.snappy:*</exclude>
                       <exclude>com.tdunning:*</exclude>
                       <exclude>tomcat:*</exclude>
