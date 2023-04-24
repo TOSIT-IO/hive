@@ -1,6 +1,6 @@
 # TDP Hive Notes
 
-The version 3.1.3-TDP-0.1.0-SNAPSHOT of Apache Hive is based on the `branch-3.1` tag of the Apache [repository](https://github.com/apache/hive/tree/branch-3.1).
+The version 3.1.3-1.0-SNAPSHOT of Apache Hive is based on the `branch-3.1` tag of the Apache [repository](https://github.com/apache/hive/tree/branch-3.1).
 
 ## Jenkinfile
 
@@ -12,7 +12,7 @@ The file `./Jenkinsfile-sample` can be used in a Jenkins / Kubernetes environmen
 mvn clean install -Pdist -DskipTests
 ```
 
-`-Pdist` generates a `.tar.gz` file of the release at `./packaging/target/apache-hive-3.1.3-TDP-0.1.0-SNAPSHOT-bin.tar.gz`.
+`-Pdist` generates a `.tar.gz` file of the release at `./packaging/target/apache-hive-3.1.3-1.0-SNAPSHOT-bin.tar.gz`.
 
 ## Testing parameters
 
