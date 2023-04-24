@@ -1,6 +1,6 @@
 # TDP Hive Notes
 
-The version 1.2.3-TDP-0.1.0-SNAPSHOT of Apache Hive is based on the `branch-1.2` tag of the Apache [repository](https://github.com/apache/hive/tree/branch-1.2).
+The version 1.2.3-1.0-SNAPSHOT of Apache Hive is based on the `branch-1.2` tag of the Apache [repository](https://github.com/apache/hive/tree/branch-1.2).
 
 **Note**: This is a branch that is only needed for the Spark Dependency. Apache Spark 2.x depends on version `org.spark-project.hive:1.2.1.spark2` which was a fork hosted on the Github of one of Spark's maintainers: https://github.com/JoshRosen/hive/tree/release-1.2.1-spark2.
 
