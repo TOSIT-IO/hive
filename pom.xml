@@ -220,9 +220,9 @@
       </releases>
     </repository>
     <repository>
-      <id>conjars</id>
-      <name>Conjars</name>
-      <url>http://conjars.org/repo</url>
+      <id>wikimedia</id>
+      <name>Wikimedia-replacement-for-conjars-repo</name>
+      <url>https://archiva.wikimedia.org/repository/mirrored/</url>
       <layout>default</layout>
       <releases>
         <enabled>true</enabled>
