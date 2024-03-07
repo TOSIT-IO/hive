@@ -13,3 +13,7 @@ mvn clean install -DskipTests
 ## Test execution notes
 
 Should we care about testing this Hive version ?
+
+## Build notes
+
+Commit `b981f887c7bc96dff7cab97342d929db4a2d164c` migrates pentaho-aggdesigner-algorithm to aggdesigner-algorithm because the repository `http://conjars.org/repo` where the dependency was located does no longer exist.
