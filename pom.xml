@@ -147,7 +147,7 @@
     <guava.version>19.0</guava.version>
     <groovy.version>2.4.11</groovy.version>
     <h2database.version>1.3.166</h2database.version>
-    <hadoop.version>3.1.1-0.0</hadoop.version>
+    <hadoop.version>3.3.6-1.0</hadoop.version>
     <hadoop.bin.path>${basedir}/${hive.path.to.root}/testutils/hadoop</hadoop.bin.path>
     <hamcrest.version>1.3</hamcrest.version>
     <hbase.version>2.0.0-alpha4</hbase.version>
@@ -196,9 +196,9 @@
     <slf4j.version>1.7.10</slf4j.version>
     <ST4.version>4.0.4</ST4.version>
     <storage-api.version>2.7.0</storage-api.version>
-    <tez.version>0.10.2</tez.version>
+    <tez.version>0.10.2-1.0</tez.version>
     <super-csv.version>2.2.0</super-csv.version>
-    <spark.version>2.3.4-1.0</spark.version>
+    <spark.version>2.3.4-2.0</spark.version>
     <scala.binary.version>2.11</scala.binary.version>
     <scala.version>2.11.8</scala.version>
     <tempus-fugit.version>1.1</tempus-fugit.version>
@@ -206,10 +206,10 @@
     <wadl-resourcedoc-doclet.version>1.4</wadl-resourcedoc-doclet.version>
     <velocity.version>2.3</velocity.version>
     <xerces.version>2.9.1</xerces.version>
-    <zookeeper.version>3.5.5</zookeeper.version>
+    <zookeeper.version>3.8.4-0.0</zookeeper.version>
     <jpam.version>1.1</jpam.version>
     <felix.version>2.4.0</felix.version>
-    <curator.version>4.2.0</curator.version>
+    <curator.version>5.2.0</curator.version>
     <jsr305.version>3.0.0</jsr305.version>
     <tephra.version>0.6.0</tephra.version>
     <gson.version>2.2.4</gson.version>
