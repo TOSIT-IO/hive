@@ -34,6 +34,11 @@ Commit `upgrade-acid: exclude pentaho-aggdesigner-algorithm from the imports` ex
 
 Commit `fix(build): upgrade protobuf version` upgrades protobuf from version 2.5.0 to 3.25.5 to avoid a compilation failure caused by a Tez version upgrade.
 
+Commit `HIVE-22398 Remove Yarn queue management via ShimLoader.`
+Legacy MR Hive used this shim loader to do fair scheduling using Yarn Queues non public APIs. This patch will remove this code since it is not used anymore and new YARN-8967 changes will break future version upgrade, this is the case with Hadoop 3.3.6.
+
+Commit `fix(build): upgrade protobuf version` upgrades protobuf from version 2.5.0 to 3.25.5 to avoid a compilation failure caused by a Tez version upgrade.
+
 Commit `HIVE 27336 : Upgrade Tez to >= 0.10.2 in Hive-3.X` is necessary to avoid compilation failure with Hadoop 3.3.6 and Tez 0.10.4.
 
 Commit `HIVE-21777: Maven jar goal is producing warning due to missing dependency (Aron Hamvas via Peter Vary)` is necessary for compilation otherwise maven will search a snapshot version  for apache-directory-clientapi version which does not exist although it is specified as non snapshot in the pom.xml.
